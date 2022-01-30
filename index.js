@@ -116,4 +116,4 @@ client.on('messageCreate', msg =>
   }
 })
 
-client.login('ODc5MDczNjAxOTk3OTE0MTgy.YSKbFw.2Du8IZ9y22YuEYQM_F-TYRdHv9c')
+client.login('nope')
