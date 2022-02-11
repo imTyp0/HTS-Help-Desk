@@ -22,9 +22,9 @@ client.on('messageCreate', msg =>
         {
           msg.channel.send(`
           > Hi! I'm HTS help desk, here are the commands you can use:
-          > -Help | Displays this help menu
-          > -Help topics | Displays all available topics
-          > -Help <topic> | Displays information about a specific topic
+          > $Help | Displays this help menu
+          > $Help topics | Displays all available topics
+          > $Help <topic> | Displays information about a specific topic
         `);
         }
         
@@ -41,7 +41,7 @@ client.on('messageCreate', msg =>
           > PHP (Language found in backend(server side) of webpages)
           > XSS (Cross Site Scripting)
           > SSRF (Server Side Request Forgery)
-          Use -Help <topic name> for more info on that topic!
+          Use $Help <topic name> for info on that topic!
         `); // explain better later
         }
         else if (userArg === 'Sqli')
@@ -108,7 +108,7 @@ client.on('messageCreate', msg =>
       {
         msg.channel.send(`
         > Invalid or unlisted topic!
-      Please use -Help topics to see all available topics.
+      Please use $Help topics to see all available topics.
         `)
       }
       
